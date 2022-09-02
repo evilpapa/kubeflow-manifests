@@ -1,6 +1,6 @@
-# Using Examples to enable RBAC
+# RBAC 启用使用示例
 
-This guide helps in setting up RBAC for Kubeflow.
+该指引展示 在 Kubeflow 开启 RBAC。
 
 The RBAC rules here assume 3 groups: admin, datascience and validator as sample groups for operating on Kubeflow.
 

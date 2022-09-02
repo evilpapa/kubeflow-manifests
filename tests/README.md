@@ -1,4 +1,4 @@
-# Kustomize Manifest Tests
+# Kustomize 清单测试
 
 ## E2E
 
