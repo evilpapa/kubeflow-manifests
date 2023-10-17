@@ -1,4 +1,4 @@
-# Kustomize 清单测试
+# Kustomize 测试清单
 
 ## E2E
 

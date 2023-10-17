@@ -1,6 +1,6 @@
 ### Manifests
 
-This folder contains manifests for installing `profile-controller`. The structure is the following:
+本文件夹包含安装 `profile-controller` 的所有工件。结构如下：
 
 ```
 .
@@ -20,14 +20,14 @@ The breakdown is the following:
 - `base`, `overlays`: Kustomizations meant for consumption by the user:
     - `overlays/kubeflow`: Installs `profile-controller` as part of Kubeflow. The resulting manifests should be the same as the result of the [deprecated `base_v3` from kubeflow/manifests](https://github.com/kubeflow/manifests/tree/306d02979124bc29e48152272ddd60a59be9306c/profiles/base_v3). At a glance, it makes the following changes:
         - Use namespace `kubeflow`.
-        - Remove namespace resource.
-        - Add KFAM container.
-        - Add KFAM Service and VirtualService.
-    - `overlays/standalone`: Install `profile-controller` in its own namespace. Useful for testing or for users that prefer to install just the controller.
+        - 移除空间资源。
+        - 添加 KFAM 容器。
+        - 添加 KFAM Service 和 VirtualService。
+    - `overlays/standalone`: 安装 `profile-controller` 到专有空间。Useful for testing or for users that prefer to install just the controller.
 
 
-### Settings
+### 设置
 
-#### Namespace label injection
+#### 命名空间标签注入
 
-The Profile Controller applies several labels to every Profile namespace. These labels are configurable by editing the `namespace-labels` ConfigMap. Refer to the current value for usage instruction.
+Profile Controller 为每个 Profile 空间应用多个标签。这些标签通过修改 `namespace-labels` ConfigMap 进行配置。 Refer to the current value for usage instruction.
